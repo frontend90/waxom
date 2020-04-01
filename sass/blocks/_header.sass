@@ -1,0 +1,66 @@
+.header 
+  background: url(../img/header/bg.png) no-repeat 
+  background-size: cover 
+  width: 100%
+  height: 100vh 
+  & .nav 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    padding-top: 40px 
+    & .logo 
+      display: flex 
+      align-items: center
+      & h2 
+        +ral_reg 
+        font-size: 34px 
+        color: #ffffff
+        letter-spacing: -1.36px 
+        font-weight: normal
+        margin-left: 2px 
+    & .menu 
+      display: flex 
+      align-items: center
+      & .menu-nav 
+        & a 
+          color: #ffffff
+          font-size: 14px 
+          margin-left: 30px 
+          transition: 0.3s linear 
+          &:hover
+            color: #c7b299
+          &:first-of-type
+            margin-left: 0
+      & .menu-items
+        display: flex 
+        align-items: center
+        margin-left: 60px 
+        & .shopping 
+          margin-right: 10px 
+          & a 
+            & .fas 
+              +solid 
+              font-size: 18px 
+              color: #ffffff
+        & .search 
+          margin-left: 25px 
+          & form 
+            position: relative
+            display: flex 
+            align-items: center
+            & .search-input 
+              display: none 
+              & input 
+                border: 1px solid #c7b299
+                border-radius: 3px 
+                width: 150px 
+                color: #ffffff
+                padding-left: 5px 
+            & a 
+              position: absolute
+              right: 5px  
+              & .fas 
+                +solid 
+                color: #ffffff
+              
+
