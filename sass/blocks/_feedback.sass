@@ -1,0 +1,41 @@
+.feedback 
+  padding: 80px 0 
+  & .feedback-wrap 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      text-align: center
+      width: 275px 
+      position: relative
+      padding-bottom: 30px 
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        background: #f1eee9
+        width: 70px 
+        height: 3px 
+        transition: 0.3s 
+      &:hover .fas 
+        color: #c7b299
+        font-size: 44px 
+      &:hover h5 
+        color: #c7b299
+      &:hover::before 
+        background: #c7b299
+      & .fas 
+        +solid 
+        color: #555555
+        font-size: 49px 
+        transition: 0.3s 
+      & h5 
+        margin-top: 20px 
+        +ral_semi 
+        font-size: 22px 
+        color: #555555
+        transition: 0.3s 
+      & p 
+        margin-top: 10px 
+        font-size: 14px 
+        color: #8c8c8c
+        line-height: 1.71 

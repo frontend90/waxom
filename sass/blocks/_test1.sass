@@ -1,0 +1,37 @@
+.test1 
+  background: #fbfaf8 
+  padding-top: 80px 
+  & .test1-wrap 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    & .content 
+      & h6 
+        color: #555555
+        +ral_semi 
+        font-size: 30px
+      & .content-text 
+        margin-top: 30px 
+        line-height: 1.75 
+        width: 665px
+      & .content-desc 
+        margin-top: 40px
+        padding-left: 50px 
+        & p 
+          line-height: 2  
+          position: relative
+          padding-left: 50px 
+          display: flex 
+          align-items: center
+          &::before
+            content: '>'
+            position: absolute
+            left: 0
+            color: #ffffff
+            background: #c7b299
+            border-radius: 50%
+            width: 21px 
+            height: 21px 
+            display: inline-flex
+            align-items: center
+            justify-content: center 

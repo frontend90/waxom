@@ -39,6 +39,11 @@
 @mixin ral_med  
   font-family: 'Raleway-Medium'
 @font-face 
+  font-family: 'Raleway-SemiBold'
+  src: url(../fonts/Raleway-SemiBold.ttf)
+@mixin ral_semi  
+  font-family: 'Raleway-SemiBold'
+@font-face 
   font-family: 'Roboto-Regular'
   src: url(../fonts/Roboto-Regular.ttf)
 @mixin rob_reg 
@@ -47,6 +52,8 @@ body
   font-size: 16px 
   color: #8c8c8c
   +mont_light 
+  &.no-scroll 
+    overflow: hidden
 .container 
   max-width: 1170px 
   margin: auto
