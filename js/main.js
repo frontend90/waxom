@@ -85,3 +85,12 @@ $(document).on('click', function (e) {
 $('.video').click(function () {
   $('.video').addClass('remove');
 });
+
+/************    blog slick    **************/
+$('.blog-slider').slick({
+  prevArrow: $('.blog-arrow-left'),
+  nextArrow: $('.blog-arrow-right'),
+  dots: false,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});

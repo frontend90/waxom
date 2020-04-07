@@ -1,0 +1,115 @@
+.blog 
+  padding-top: 80px
+  padding-bottom: 140px  
+  & .title 
+    text-align: center
+    & h5 
+      font-size: 30px 
+      color: #555555
+      +ral_semi
+    & p 
+      margin: 15px auto 0 
+      width: 770px  
+  & .blog-slider-wrap 
+    position: relative
+    margin-top: 40px 
+    & .blog-slider
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex 
+          & .blog-slider-block 
+            &:hover .content 
+              background: #362f2d
+              border: none 
+            &:hover .content h6 
+              color: #c7b299
+            &:hover .content p 
+              color: #ffffff
+            &:hover .img .overlay .number 
+              background: #c7b299
+            &:hover .img .overlay .month 
+              background: #a48d72
+            & .img 
+              position: relative
+              width: 370px 
+              & img 
+                width: 100% 
+              & .overlay 
+                position: absolute
+                top: 20px 
+                left: 20px 
+                text-align: center
+                color: #ffffff
+                width: 50px 
+                & .number 
+                  background: #363636
+                  font-size: 24px 
+                  transition: .3s linear 
+                & .month 
+                  background: #252525
+                  +rob_reg 
+                  font-size: 12px 
+                  line-height: 1.67
+                  transition: .3s linear 
+            & .content 
+              width: 370px 
+              border-left: 1px solid #f8f8f8
+              border-bottom: 1px solid #f8f8f8
+              border-right: 1px solid #f8f8f8
+              padding: 30px 
+              transition: .3s linear 
+              & h6 
+                +ral_med 
+                font-size: 20px 
+                color: #555555
+                font-weight: 500 
+                transition: .3s linear 
+              & p 
+                margin-top: 10px 
+                font-size: 14px 
+                line-height: 1.57
+                transition: .3s linear 
+              & a 
+                display: inline-flex 
+                margin-top: 20px
+                align-items: center
+                font-size: 14px 
+                color: #c7b299
+                transition: 0.3s linear 
+                &:hover
+                  color: #ffffff
+                & .fas 
+                  +solid 
+                  padding-left: 10px  
+    & .btn
+      position: absolute
+      bottom: -50px 
+      display: inline-flex 
+      align-items: center
+      justify-content: center
+      width: 100%  
+      & button 
+        width: 22px 
+        height: 22px 
+        border: 1px solid #d1d1d1
+        border-radius: 50%
+        display: flex 
+        align-items: center
+        justify-content: center
+        margin-left: 10px 
+        transition: 0.3s linear 
+        &:hover
+          border-color: #c7b299
+        &:hover .fas 
+          color: #c7b299 
+        &:first-of-type
+          margin-left: 0
+        & .fas 
+          +solid 
+          font-size: 14px 
+          color: #d1d1d1
+          transition: 0.3s linear 
+
+
+
